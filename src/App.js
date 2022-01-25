@@ -1,5 +1,5 @@
 import React from "react";
-// import About from "./Components/About";
+import About from "./Components/About";
 import Navbar from './Components/Navbar';
 import Textform from "./Components/Textform";
 import Alert from "./Components/Alert";
@@ -26,7 +26,7 @@ setTimeout(() => {
     Setmode('dark');
     document.body.style.backgroundColor =  'black';
     showalert('Dark Mode has Enabled', 'success');
-    document.title = 'TextUtils - Dark mode'
+    // document.title = 'TextUtils - Dark mode'
     // bad ui 
     // setInterval(() => {
     //   document.title = 'TextUtils - is amazing'
@@ -35,7 +35,7 @@ setTimeout(() => {
     Setmode('light');
     document.body.style.backgroundColor =  'white';
     showalert('Light Mode has Enabled', 'success');
-    document.title = 'TextUtils -  Light mode'
+    // document.title = 'TextUtils -  Light mode'
     // bad UI
     // setInterval(() => {
     //   document.title = ' Install TextUtils now'
@@ -49,10 +49,11 @@ setTimeout(() => {
     <Navbar title="Textutils" aboutText = "About US" mode={mode} toggleMode ={toggleMode}/>
    
     <Alert alert={alert} />
+
    <div className="container my-3">
 
- 
-          <Textform heading="Enter the text below to analyze" mode={mode} showalert={showalert} />
+            <About mode={mode} />
+          <Textform heading=" Try TextUtils -  Word Counter, Character Counter, UpperCase to lowercase," mode={mode} showalert={showalert} />
           
    </div> 
   

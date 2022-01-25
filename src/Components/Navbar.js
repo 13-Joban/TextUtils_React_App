@@ -15,7 +15,7 @@ import React from 'react'
           <a className="nav-link active"  href="/">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/about">{props.aboutText}</a>
+          <link className="nav-link" href="/About.js">{props.aboutText}</link>
         </li>
        
         <li className="nav-item">
@@ -26,10 +26,10 @@ import React from 'react'
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button className="btn btn-outline-success" type="submit">Search</button>
       </form> */}
-      <div className={`form-check form-switch text-${props.mode === 'light' ? 'dark' : 'light'}`}>
+      {/* <div className={`form-check form-switch text-${props.mode === 'light' ? 'dark' : 'light'}`}>
   <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick= {props.toggleMode}/>
   <label className="form-check-label" htmlfor="flexSwitchCheckDefault">{props.mode ==='dark' ?  'Enable Light Mode':  'Enable Dark Mode'}</label>
-</div>
+</div> */}
  {/* <div className={`form-check form-switch text-${props.mode === 'light' ? 'dark' : 'light'}`}>
   <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick= {props.toggleMode}/>
   <label className="form-check-label" for="flexSwitchCheckDefault">{props.mode ==='dark' ?  'Enable Light Mode':  'Enable Green Mode'}</label>
@@ -57,3 +57,4 @@ Navbar.defaultProps = {
 title: 'Set title here',
 aboutText: 'set abouttext here'
 }
+
